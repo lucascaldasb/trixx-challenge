@@ -4,7 +4,7 @@ import {
   StyledButton 
 } from "./styles"
 
-export const FormButton = ({
+export const SmallButton = ({
   title,
   onPress = () => {}
 }) => {

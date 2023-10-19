@@ -1,6 +1,6 @@
-import styled from "styled-components";
+import styled from "styled-components/native";
 
-export const Container = styled.View`
+export const Container = styled.ScrollView`
   background-color: #FFFDFF;
   height: 100%;
   width: 100%;
@@ -17,4 +17,16 @@ export const ImageContainer = styled.View`
 export const ButtonContainer = styled.View`
   display: flex;
   margin-top: 10%;
+`
+
+export const ErrorLabel = styled.Text`
+  font-family: 'Poppins_500Medium';
+  font-size: 14px;
+  color: #E74C3C;
+`
+
+export const ErrorContainer = styled.View`
+  display: flex;
+  align-items: flex-start;
+  padding: 2px 10px;
 `

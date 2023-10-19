@@ -1,3 +1,5 @@
+import { useState } from "react"
+import { TouchableOpacity } from "react-native"
 import { Image } from "react-native"
 import { 
   Container, 
@@ -8,13 +10,13 @@ import {
 
 
 export const FormInput = ({ 
-  label, 
+  label,
   placeholder, 
   hasIcon = false,
   onChange,
   value,
-  hide = false
 }) => {
+  const [showPassword, setShowPassword] = useState(true);
   return (
     <Container>
       <Label>{label}</Label>
@@ -23,10 +25,14 @@ export const FormInput = ({
           onChangeText={onChange}
           value={value}
           placeholder={placeholder}
-          secureTextEntry={hide}
+          secureTextEntry={showPassword}
         />
         {hasIcon && (
-          <Image source={require('../../../assets/eye.png')} />
+          <TouchableOpacity onPress={() => setShowPassword(prev => !prev)}>
+            <Image 
+              source={require('../../../assets/eye.png')} 
+            />
+          </TouchableOpacity>
         )}
       </InputContainer>
     </Container>

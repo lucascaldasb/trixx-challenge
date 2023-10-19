@@ -5,20 +5,20 @@ export const Container = styled.View`
   align-items: center;
   justify-content: center;
   width: 100%;
-  margin-bottom: 10px;
 `
 
 export const StyledButton = styled.TouchableOpacity`
-  width: 90%;
-  height: 50px;
-  border-radius: 8px;
+  width: 110px;
+  height: 35px;
+  border-radius: 10px;
   background-color: #E1B12C;
   justify-content: center;
 `
 
 export const ButtonLabel = styled.Text`
   font-family: 'Poppins_400Regular';
-  font-size: 16px;
+  font-size: 12px;
   text-align: center;
   color: #FFF;
 `
+
