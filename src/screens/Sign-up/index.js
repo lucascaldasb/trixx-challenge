@@ -1,4 +1,4 @@
-import { View, Image } from "react-native";
+import { ScrollView, Image } from "react-native";
 import { ButtonContainer, Container, ErrorContainer, ErrorLabel, ImageContainer } from "./styles";
 import { FormInput } from "../../components/Inputs/FormInput/FormInput";
 import { FormButton } from "../../components/Buttons/FormButton/FormButton";
@@ -36,10 +36,10 @@ export default function SignUpScreen() {
 
   return (
     <Container>
-      <View>
-        <ImageContainer>
-          <Image source={require('../../assets/logo.png')}/>
-        </ImageContainer>
+      <ImageContainer>
+        <Image source={require('../../assets/logo.png')}/>
+      </ImageContainer>
+      <ScrollView>
         <Controller 
           control={control}
           name="name"
@@ -142,7 +142,7 @@ export default function SignUpScreen() {
             <ErrorLabel>{errors.confirm_password?.message}</ErrorLabel>
           </ErrorContainer>
         )}
-      </View>
+      </ScrollView>
       <ButtonContainer>
         <FormButton 
           title="Criar Conta"

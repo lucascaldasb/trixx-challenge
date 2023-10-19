@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
 
-export const Container = styled.ScrollView`
+export const Container = styled.View`
   background-color: #FFFDFF;
   height: 100%;
   width: 100%;
@@ -16,7 +16,7 @@ export const ImageContainer = styled.View`
 
 export const ButtonContainer = styled.View`
   display: flex;
-  margin-top: 10%;
+  margin-top: 5%;
 `
 
 export const ErrorLabel = styled.Text`
