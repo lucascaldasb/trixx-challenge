@@ -25,7 +25,7 @@ export const FormInput = ({
           onChangeText={onChange}
           value={value}
           placeholder={placeholder}
-          secureTextEntry={showPassword}
+          secureTextEntry={showPassword && hasIcon}
         />
         {hasIcon && (
           <TouchableOpacity onPress={() => setShowPassword(prev => !prev)}>
